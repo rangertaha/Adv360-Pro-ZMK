@@ -25,44 +25,70 @@
         compatible = "zmk,keymap";
 
         default {
-            display-name = "Base";
-            bindings = <
-&kp EQUAL       &kp N1            &kp N2       &kp N3          &kp N4          &kp N5  &tog 1                                                     &mo 3        &kp N6  &kp N7           &kp N8           &kp N9       &kp N0                     &kp MINUS
-&kp TAB         &kp Q             &kp W        &kp E           &kp R           &kp T   &none                                                      &none        &kp Y   &kp U            &kp I            &kp O        &kp P                      &kp BSLH
-&kp ESC         &hm LEFT_SHIFT A  &hm LCTRL S  &hm LEFT_ALT D  &hm LEFT_GUI F  &kp G   &none       &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none        &kp H   &hm RIGHT_GUI J  &hm RIGHT_ALT K  &hm RCTRL L  &hm RIGHT_SHIFT SEMICOLON  &kp SQT
-&hm LSHFT CAPS  &kp Z             &kp X        &kp C           &kp V           &kp B                          &kp HOME      &kp PG_UP                          &kp N   &kp M            &kp COMMA        &kp DOT      &kp FSLH                   &kp RSHFT
-&mo 2           &kp GRAVE         &kp CAPS     &none           &none                   &lt 1 BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &lt 2 SPACE          &kp UP           &kp DOWN         &kp LBKT     &kp RBKT                   &mo 2
-            >;
-
             label = "default";
-        };
-
-        keypad {
-            display-name = "Kp";
+            display-name = "default-";
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &trans                                                   &mo 3      &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
-&kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &none                                                    &none      &kp Y   &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp BSLH
-&kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp H   &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &kp SQT
-&kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                        &kp HOME      &kp PG_UP                        &kp N   &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &kp RSHFT
-&mo 2      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp KP_N0          &kp UP      &kp DOWN      &kp KP_DOT     &kp RBKT         &mo 2
+&kp EQUAL       &kp N1     &kp N2    &kp N3          &kp N4           &kp N5  &to 0                                                         &mo 5      &kp N6  &kp N7  &kp N8          &kp N9            &kp N0             &kp MINUS
+&kp TAB         &kp Q      &kp W     &kp E           &kp R            &kp T   &to 1                                                         &to 3      &kp Y   &kp U   &kp I           &kp O             &kp P              &kp BSLH
+&kp ESC         &kp A      &kp S     &kp D           &kp F            &kp G   &to 2          &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &to 4      &kp H   &kp J   &kp K           &kp L             &kp SEMICOLON      &kp SQT
+&kp LEFT_SHIFT  &kp Z      &kp X     &kp C           &kp V            &kp B                             &kp HOME      &kp PG_UP                        &kp N   &kp M   &kp COMMA       &kp DOT           &kp FSLH           &kp RSHFT
+&to 3           &kp GRAVE  &kp CAPS  &kp LEFT_ARROW  &kp RIGHT_ARROW          &kp BACKSPACE  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP  &kp DOWN_ARROW  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &to 3
             >;
         };
 
-        fn {
+        Operator {
+            display-name = "default-";
+            bindings = <
+&kp EQUAL     &kp N1            &kp N2       &kp N3          &kp N4          &kp N5  &tog 0                                                     &mo 5        &kp N6  &kp N7           &kp N8           &kp N9            &kp N0                     &kp MINUS
+&kp TAB       &kp Q             &kp W        &kp E           &kp R           &kp T   &trans                                                     &to 3        &kp Y   &kp U            &kp I            &kp O             &kp P                      &kp BSLH
+&hm CAPS ESC  &hm LEFT_SHIFT A  &hm LCTRL S  &hm LEFT_ALT D  &hm LEFT_GUI F  &kp G   &to 2       &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &to 5        &kp H   &hm RIGHT_GUI J  &hm RIGHT_ALT K  &hm RCTRL L       &hm RIGHT_SHIFT SEMICOLON  &kp SQT
+&kp GRAVE     &kp Z             &kp X        &kp C           &kp V           &kp B                          &kp HOME      &kp PG_UP                          &kp N   &kp M            &kp COMMA        &kp DOT           &kp FSLH                   &kp RSHFT
+&none         &none             &none        &none           &none                   &lt 2 BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &lt 3 SPACE          &kp LEFT_BRACE   &kp RIGHT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET          &none
+            >;
+
+            label = "operator";
+        };
+
+        Extended {
+            display-name = "Ex";
+            bindings = <
+&kp EQUAL  &kp N1        &kp N2        &kp N3        &kp N4        &kp N5       &to 0                                                        &mo 5      &kp N6        &kp NUMBER_7    &kp NUMBER_8     &kp NUMBER_9          &kp NUMBER_0           &kp MINUS
+&kp GRAVE  &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PERCENT  &to 1                                                        &to 3      &kp CARET     &kp AMPS        &kp ASTERISK     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE
+&kp TILDE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5       &trans    &kp LCTRL  &kp LALT      &kp RIGHT_GUI  &kp RCTRL  &to 5      &kp NUMBER_6  &kp N7          &kp NUMBER_8     &kp N9                &kp N0                 &kp MINUS
+&kp LSHFT  &none         &none         &none         &none         &none                             &kp HOME      &kp PAGE_UP                          &none         &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp RSHFT
+&none      &none         &none         &none         &none                      &kp BSPC  &kp DEL    &kp END       &kp PAGE_DOWN  &kp ENTER  &kp SPACE                &none           &none            &none                 &none                  &none
+            >;
+        };
+
+        fn1 {
             display-name = "Fn";
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &tog 1                                      &mo 3   &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&trans  &trans  &trans  &trans  &trans  &trans  &none                                       &none   &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &none   &trans  &trans      &trans  &trans  &none   &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans   &trans   &trans
+&kp F1  &kp F2  &kp F3             &kp F4      &kp F5           &kp F6      &tog 0                                      &mo 5   &kp F7    &kp F8          &kp F9            &kp F10            &kp F11     &kp F12
+&trans  &trans  &kp C_VOLUME_DOWN  &kp K_MUTE  &kp C_VOLUME_UP  &trans      &to 1                                       &trans  &none     &kp C_AC_ZOOM   &kp C_AC_ZOOM_IN  &kp C_AC_ZOOM_OUT  &trans      &trans
+&trans  &trans  &kp C_PREVIOUS     &kp K_STOP  &kp C_PLAY       &kp C_NEXT  &to 2   &trans  &trans      &trans  &trans  &to 5   &kp LEFT  &kp UP          &kp DOWN          &kp RIGHT          &none       &kp RET
+&trans  &trans  &trans             &trans      &trans           &trans                      &trans      &trans                  &trans    &kp K_PREVIOUS  &kp PAGE_DOWN     &kp PAGE_UP        &kp K_NEXT  &trans
+&trans  &trans  &trans             &trans      &trans                       &trans  &trans  &trans      &trans  &trans  &trans            &trans          &trans            &trans             &trans      &trans
             >;
+
+            label = "fn1";
+        };
+
+        fn2 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+            >;
+
+            label = "fn2";
         };
 
         mod {
             display-name = "Mod";
             bindings = <
-&none           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                  &trans           &none  &none       &none       &none  &none  &none
+&none           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &to 0                                                  &trans           &none  &none       &none       &none  &none  &none
 &none           &none         &none         &none         &none         &none         &bootloader                                            &bootloader      &none  &none       &none       &none  &none  &none
 &studio_unlock  &none         &none         &none         &none         &none         &none        &none  &none      &bt BT_CLR  &none       &stp STP_BAT     &none  &none       &none       &none  &none  &none
 &none           &none         &none         &none         &macro_ver    &none                             &none      &none                                    &none  &none       &none       &none  &none  &none
@@ -88,6 +114,18 @@
         extra4 {
             display-name = "Yellow";
             status = "reserved";
+        };
+
+        layer_10 {
+            bindings = <
+&kp  &kp  &kp  &kp  &kp  &kp  &kp                          &kp  &kp  &kp  &kp  &kp  &kp  &kp
+&kp  &kp  &kp  &kp  &kp  &kp  &kp                          &kp  &kp  &kp  &kp  &kp  &kp  &kp
+&kp  &kp  &kp  &kp  &kp  &kp  &kp  &kp  &kp      &kp  &kp  &kp  &kp  &kp  &kp  &kp  &kp  &kp
+&kp  &kp  &kp  &kp  &kp  &kp            &kp      &kp            &kp  &kp  &kp  &kp  &kp  &kp
+&kp  &kp  &kp  &kp  &kp       &kp  &kp  &kp      &kp  &kp  &kp       &kp  &kp  &kp  &kp  &kp
+            >;
+
+            label = "fnrrr";
         };
     };
 };
