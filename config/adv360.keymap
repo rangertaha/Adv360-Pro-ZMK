@@ -55,7 +55,7 @@
             bindings = <
 &kp F1  &kp F2  &kp F3             &kp F4      &kp F5           &kp F6      &tog 0                                      &mo 3   &kp F7    &kp F8            &kp F9         &kp F10            &kp F11     &kp F12
 &trans  &trans  &kp C_VOLUME_DOWN  &kp C_MUTE  &kp C_VOLUME_UP  &trans      &trans                                      &trans  &none     &kp C_AC_ZOOM_IN  &kp C_AC_ZOOM  &kp C_AC_ZOOM_OUT  &trans      &trans
-&trans  &trans  &kp C_PREVIOUS     &kp K_STOP  &kp C_PLAY       &kp C_NEXT  &trans  &trans  &trans      &trans  &trans  &trans  &kp LEFT  &kp UP            &kp DOWN       &kp RIGHT          &none       &kp RET
+&trans  &trans  &kp C_PREVIOUS     &kp K_STOP  &kp C_PLAY       &kp C_NEXT  &trans  &trans  &trans      &trans  &trans  &trans  &kp LEFT  &kp DOWN          &kp UP_ARROW   &kp RIGHT          &none       &kp RET
 &trans  &trans  &trans             &trans      &trans           &trans                      &trans      &trans                  &trans    &kp K_PREVIOUS    &kp PAGE_DOWN  &kp PAGE_UP        &kp K_NEXT  &trans
 &trans  &trans  &trans             &trans      &trans                       &trans  &trans  &trans      &trans  &trans  &trans            &trans            &trans         &trans             &trans      &trans
             >;
