@@ -109,13 +109,13 @@
             >;
         };
 
-        Empty {
+        Graphine {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans          &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &trans                                      &trans  &kp NUMBER_6      &kp N7  &kp N8      &kp N9            &kp N0             &trans
+&trans          &kp B         &kp L         &kp D         &kp W         &kp Z   &trans                                      &trans  &kp SINGLE_QUOTE  &kp F   &kp O       &kp U             &kp J              &kp SEMICOLON
+&trans          &kp N         &kp R         &kp T         &kp S         &kp G   &trans  &trans  &trans      &trans  &trans  &trans  &kp Y             &kp H   &kp A       &kp E             &kp I              &kp COMMA
+&kp LEFT_SHIFT  &kp Q         &kp X         &kp M         &kp C         &kp V                   &trans      &trans                  &kp K             &kp P   &kp PERIOD  &kp MINUS         &kp SLASH          &kp RSHFT
+&trans          &trans        &trans        &trans        &trans                &trans  &trans  &trans      &trans  &trans  &trans                    &trans  &trans      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
             >;
         };
 
