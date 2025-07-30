@@ -63,11 +63,11 @@
         Operator {
             display-name = "default-";
             bindings = <
-&kp EQUAL       &kp N1            &kp N2        &kp N3          &kp N4          &kp N5  &to 0                                                      &mo 5        &kp N6  &kp N7            &kp N8           &kp N9                &kp N0                     &kp MINUS
-&kp TAB         &kp Q             &kp W         &kp E           &kp R           &kp T   &to 1                                                      &to 3        &kp Y   &kp U             &kp I            &kp O                 &kp P                      &kp BSLH
-&kp ESC         &hm LEFT_SHIFT A  &hm LCTRL S   &hm LEFT_ALT D  &hm LEFT_GUI F  &kp G   &to 2       &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &to 4        &kp H   &hm RIGHT_GUI J   &hm RIGHT_ALT K  &hm RCTRL L           &hm RIGHT_SHIFT SEMICOLON  &kp SQT
-&kp LEFT_SHIFT  &kp Z             &kp X         &kp C           &kp V           &kp B                          &kp HOME      &kp PG_UP                          &kp N   &kp M             &kp COMMA        &kp DOT               &kp FSLH                   &kp RSHFT
-&mo 2           &row5 0 GRAVE     &row5 0 CAPS  &row5 0 LEFT    &row5 0 RIGHT           &lt 1 BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &lt 2 SPACE          &row5 0 UP_ARROW  &row5 0 DOWN     &row5 0 LEFT_BRACKET  &row5 0 RIGHT_BRACKET      &mo 1
+&kp EQUAL        &kp N1            &kp N2       &kp N3          &kp N4          &kp N5  &to 0                                                      &mo 5        &kp N6  &kp N7           &kp N8           &kp N9       &kp N0                     &kp MINUS
+&kp TAB          &kp Q             &kp W        &kp E           &kp R           &kp T   &to 1                                                      &to 3        &kp Y   &kp U            &kp I            &kp O        &kp P                      &kp BSLH
+&hm CAPS ESCAPE  &hm LEFT_SHIFT A  &hm LCTRL S  &hm LEFT_ALT D  &hm LEFT_GUI F  &kp G   &to 2       &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &to 4        &kp H   &hm RIGHT_GUI J  &hm RIGHT_ALT K  &hm RCTRL L  &hm RIGHT_SHIFT SEMICOLON  &kp SQT
+&kp LEFT_SHIFT   &kp Z             &kp X        &kp C           &kp V           &kp B                          &kp HOME      &kp PG_UP                          &kp N   &kp M            &kp COMMA        &kp DOT      &kp FSLH                   &kp RSHFT
+&mo 2            &none             &none        &none           &none                   &lt 1 BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &lt 2 SPACE          &none            &none            &none        &none                      &mo 1
             >;
 
             label = "op";
@@ -76,22 +76,22 @@
         Extended {
             display-name = "Ex";
             bindings = <
-&kp EQUAL  &kp N1        &kp N2        &kp N3        &kp N4        &kp N5       &to 0                                                        &mo 5      &kp N6        &kp NUMBER_7    &kp NUMBER_8     &kp NUMBER_9          &kp NUMBER_0           &kp MINUS
-&kp GRAVE  &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PERCENT  &trans                                                       &trans     &kp CARET     &kp AMPS        &kp ASTERISK     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE
-&kp TILDE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5       &trans    &kp LCTRL  &kp LALT      &kp RIGHT_GUI  &kp RCTRL  &trans     &kp NUMBER_6  &kp N7          &kp NUMBER_8     &kp N9                &kp N0                 &kp MINUS
-&kp LSHFT  &trans        &trans        &trans        &trans        &trans                            &kp HOME      &kp PAGE_UP                          &trans        &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp RSHFT
-&trans     &trans        &trans        &trans        &trans                     &kp BSPC  &kp DEL    &kp END       &kp PAGE_DOWN  &kp ENTER  &kp SPACE                &TSD0           &trans           &trans                &trans                 &trans
+&kp EQUAL  &kp N1        &kp N2        &kp N3            &kp N4             &kp N5       &to 0                                                        &mo 5      &kp N6          &kp NUMBER_7    &kp NUMBER_8     &kp NUMBER_9          &kp NUMBER_0           &kp MINUS
+&kp GRAVE  &kp EXCL      &kp AT        &kp HASH          &kp DOLLAR         &kp PERCENT  &trans                                                       &trans     &kp CARET       &kp AMPS        &kp ASTERISK     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE
+&kp TILDE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3      &kp NUMBER_4       &kp N5       &trans    &kp LCTRL  &kp LALT      &kp RIGHT_GUI  &kp RCTRL  &trans     &kp NUMBER_6    &kp N7          &kp NUMBER_8     &kp N9                &kp N0                 &kp MINUS
+&kp LSHFT  &trans        &trans        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp CAPS                          &kp HOME      &kp PAGE_UP                          &kp KP_NUMLOCK  &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans                &trans                 &kp RSHFT
+&trans     &trans        &trans        &trans            &trans                          &kp BSPC  &kp DEL    &kp END       &kp PAGE_DOWN  &kp ENTER  &kp SPACE                  &TSD0           &trans           &trans                &trans                 &trans
             >;
         };
 
         Media {
             display-name = "Fn";
             bindings = <
-&kp F1  &kp F2  &kp F3             &kp F4      &kp F5           &kp F6      &to 0                                       &mo 5   &kp F7    &kp F8            &kp F9         &kp F10            &kp F11     &kp F12
-&trans  &trans  &kp C_VOLUME_DOWN  &kp C_MUTE  &kp C_VOLUME_UP  &trans      &trans                                      &trans  &none     &kp C_AC_ZOOM_IN  &kp C_AC_ZOOM  &kp C_AC_ZOOM_OUT  &trans      &trans
-&trans  &trans  &kp C_PREVIOUS     &kp K_STOP  &kp C_PLAY       &kp C_NEXT  &trans  &trans  &trans      &trans  &trans  &trans  &kp LEFT  &kp DOWN          &kp UP_ARROW   &kp RIGHT          &none       &kp RET
-&trans  &trans  &trans             &trans      &trans           &trans                      &trans      &trans                  &trans    &kp K_PREVIOUS    &kp PAGE_DOWN  &kp PAGE_UP        &kp K_NEXT  &trans
-&trans  &trans  &trans             &trans      &trans                       &trans  &trans  &trans      &trans  &trans  &trans            &trans            &trans         &trans             &trans      &trans
+&kp F1  &kp F2  &kp F3             &kp F4      &kp F5           &kp F6      &to 0                                       &mo 5   &kp F7                  &kp F8         &kp F9           &kp F10             &kp F11        &kp F12
+&none   &none   &kp C_VOLUME_DOWN  &kp C_MUTE  &kp C_VOLUME_UP  &none       &trans                                      &trans  &none                   &kp HOME       &kp C_AC_SEARCH  &kp END             &kp RC(EQUAL)  &none
+&none   &none   &kp C_PREVIOUS     &kp K_STOP  &kp C_PLAY       &kp C_NEXT  &trans  &trans  &trans      &trans  &trans  &trans  &kp LEFT                &kp DOWN       &kp UP_ARROW     &kp RIGHT           &kp RC(MINUS)  &kp RET
+&none   &none   &none              &none       &none            &none                       &trans      &trans                  &kp C_AL_PREVIOUS_TASK  &kp PAGE_DOWN  &kp PAGE_UP      &kp C_AL_NEXT_TASK  &none          &none
+&none   &none   &none              &none       &none                        &trans  &trans  &trans      &trans  &trans  &trans                          &none          &none            &none               &none          &none
             >;
 
             label = "fn";
