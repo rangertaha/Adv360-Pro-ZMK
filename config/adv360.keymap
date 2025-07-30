@@ -79,7 +79,7 @@
 &kp EQUAL  &kp N1        &kp N2        &kp N3            &kp N4             &kp N5       &to 0                                                        &mo 5      &kp N6          &kp NUMBER_7    &kp NUMBER_8     &kp NUMBER_9          &kp NUMBER_0           &kp MINUS
 &kp GRAVE  &kp EXCL      &kp AT        &kp HASH          &kp DOLLAR         &kp PERCENT  &trans                                                       &trans     &kp CARET       &kp AMPS        &kp ASTERISK     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE
 &kp TILDE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3      &kp NUMBER_4       &kp N5       &trans    &kp LCTRL  &kp LALT      &kp RIGHT_GUI  &kp RCTRL  &trans     &kp NUMBER_6    &kp N7          &kp NUMBER_8     &kp N9                &kp N0                 &kp MINUS
-&kp LSHFT  &trans        &trans        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp CAPS                          &kp HOME      &kp PAGE_UP                          &kp KP_NUMLOCK  &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans                &trans                 &kp RSHFT
+&kp LSHFT  &trans        &kp EQUAL     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp CAPS                          &kp HOME      &kp PAGE_UP                          &kp KP_NUMLOCK  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp PLUS              &trans                 &kp RSHFT
 &trans     &trans        &trans        &trans            &trans                          &kp BSPC  &kp DEL    &kp END       &kp PAGE_DOWN  &kp ENTER  &kp SPACE                  &TSD0           &trans           &trans                &trans                 &trans
             >;
         };
