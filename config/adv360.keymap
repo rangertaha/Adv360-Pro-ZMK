@@ -55,6 +55,13 @@
             bindings = <&kp LS(R) &kp E &kp D &kp N1 &kp N9 &kp N7 &kp N0 &kp LS(H) &kp O &kp R &kp S &kp E &kp EXCL>;
             label = "TSD0";
         };
+
+        A483E: A {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N4 &kp N8 &kp N3 &kp E>;
+            label = "A";
+        };
     };
 
     keymap {
@@ -87,11 +94,11 @@
         Media {
             display-name = "Fn";
             bindings = <
-&none  &kp F1  &kp F2             &kp F3      &kp F4           &kp F5      &to 0                                       &mo 5   &kp F6                  &kp F7         &kp F8           &kp F9              &kp F10        &kp F11
-&none  &none   &kp C_VOLUME_DOWN  &kp C_MUTE  &kp C_VOLUME_UP  &none       &trans                                      &trans  &none                   &kp HOME       &kp C_AC_SEARCH  &kp END             &none          &kp F12
-&none  &none   &kp C_PREVIOUS     &kp K_STOP  &kp C_PLAY       &kp C_NEXT  &trans  &trans  &trans      &trans  &trans  &trans  &kp LEFT                &kp DOWN       &kp UP_ARROW     &kp RIGHT           &kp RC(EQUAL)  &kp F13
-&none  &none   &none              &none       &none            &none                       &trans      &trans                  &kp C_AL_PREVIOUS_TASK  &kp PAGE_DOWN  &kp PAGE_UP      &kp C_AL_NEXT_TASK  &kp RC(MINUS)  &kp F14
-&none  &none   &none              &none       &none                        &trans  &trans  &trans      &trans  &trans  &trans                          &none          &none            &none               &none          &none
+&none  &kp F1  &kp F2             &kp F3      &kp F4           &kp F5      &to 0                                                 &mo 5          &kp F6                  &kp F7         &kp F8           &kp F9              &kp F10        &kp F11
+&none  &none   &kp C_VOLUME_DOWN  &kp C_MUTE  &kp C_VOLUME_UP  &none       &trans                                                &trans         &none                   &kp HOME       &kp C_AC_SEARCH  &kp END             &none          &kp F12
+&none  &none   &kp C_PREVIOUS     &kp K_STOP  &kp C_PLAY       &kp C_NEXT  &trans     &trans     &trans      &trans  &trans      &trans         &kp LEFT                &kp DOWN       &kp UP_ARROW     &kp RIGHT           &kp RC(EQUAL)  &kp F13
+&none  &none   &none              &none       &none            &none                             &trans      &trans                             &kp C_AL_PREVIOUS_TASK  &kp PAGE_DOWN  &kp PAGE_UP      &kp C_AL_NEXT_TASK  &kp RC(MINUS)  &kp F14
+&none  &none   &none              &none       &none                        &kp SPACE  &kp ENTER  &trans      &trans  &kp DELETE  &kp BACKSPACE                          &none          &none            &none               &none          &none
             >;
 
             label = "fn";
