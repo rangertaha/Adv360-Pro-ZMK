@@ -42,25 +42,11 @@
     };
 
     macros {
-        STR: STR {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp N8 &kp N9 &kp N0>;
-            label = "STR";
-        };
-
         TSD0: TSD0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(R) &kp E &kp D &kp N1 &kp N9 &kp N7 &kp N0 &kp LS(H) &kp O &kp R &kp S &kp E &kp EXCL>;
             label = "TSD0";
-        };
-
-        A483E: A {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp N4 &kp N8 &kp N3 &kp E>;
-            label = "A";
         };
     };
 
