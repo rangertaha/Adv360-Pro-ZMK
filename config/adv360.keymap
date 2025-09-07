@@ -15,20 +15,11 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "tap-preferred";
+            tapping-term-ms = <180>;
+            flavor = "balanced";
             bindings = <&kp>, <&kp>;
-        };
 
-        row5: row5 {
-            compatible = "zmk,behavior-hold-tap";
-            label = "ROW5";
-            #binding-cells = <2>;
-            bindings = <&none>, <&kp>;
-
-            hold-trigger-key-positions = <61 62 63 64 71 72 73 74>;
-            tapping-term-ms = <300>;
-            require-prior-idle-ms = <200>;
+            retro-tap;
         };
 
         ht: ht {
