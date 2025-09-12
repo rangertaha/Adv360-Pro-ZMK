@@ -39,6 +39,41 @@
             bindings = <&kp LS(R) &kp E &kp D &kp N1 &kp N9 &kp N7 &kp N0 &kp LS(H) &kp O &kp R &kp S &kp E &kp EXCL>;
             label = "TSD0";
         };
+
+        tsd2: tsd2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(P) &kp R &kp O &kp V &kp I &kp N &kp C &kp E &kp N4 &kp N4 &kp LS(D) &kp E &kp D &kp U &kp C &kp T &kp E &kp D>;
+            label = "TSD2";
+        };
+
+        Alpha: A {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(A) &kp L &kp P &kp H &kp A>;
+            label = "A";
+        };
+
+        Bravo: B {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(B) &kp R &kp O &kp V &kp O>;
+            label = "B";
+        };
+
+        Charlie: C {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(C) &kp H &kp A &kp R &kp L &kp I &kp E>;
+            label = "C";
+        };
+
+        Delta: Delta {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(D) &kp E &kp L &kp T &kp A>;
+            label = "DELTA";
+        };
     };
 
     keymap {
