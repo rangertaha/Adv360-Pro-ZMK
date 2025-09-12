@@ -43,29 +43,29 @@
         tsd2: tsd2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp LS(P) &kp R &kp O &kp V &kp I &kp N &kp C &kp E &kp N4 &kp N4 &kp LS(D) &kp E &kp D &kp U &kp C &kp T &kp E &kp D>;
+            bindings = <&kp LS(P) &kp R &kp O &kp V &kp I &kp N &kp C &kp E &kp N4 &kp N4 &kp LS(D) &kp E &kp D &kp U &kp C &kp T &kp E &kp D>;
             label = "TSD2";
         };
 
-        Alpha: A {
+        Alpha: Alpha {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(A) &kp L &kp P &kp H &kp A>;
-            label = "A";
+            label = "Alpha";
         };
 
-        Bravo: B {
+        Bravo: Bravo {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(B) &kp R &kp O &kp V &kp O>;
-            label = "B";
+            label = "Bravo";
         };
 
-        Charlie: C {
+        Charlie: Charlie {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(C) &kp H &kp A &kp R &kp L &kp I &kp E>;
-            label = "C";
+            label = "Charlie";
         };
 
         Delta: Delta {
@@ -73,6 +73,62 @@
             #binding-cells = <0>;
             bindings = <&kp LS(D) &kp E &kp L &kp T &kp A>;
             label = "DELTA";
+        };
+
+        Echo: Echo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(E) &kp C &kp H &kp O>;
+            label = "ECHO";
+        };
+
+        Foxtrot: Foxtrot {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(F) &kp O &kp X &kp T &kp R &kp O &kp T>;
+            label = "FOXTROT";
+        };
+
+        Golf: Golf {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(G) &kp O &kp L &kp F>;
+            label = "GOLF";
+        };
+
+        Hotel: Hotel {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(H) &kp O &kp T &kp E &kp L>;
+            label = "HOTEL";
+        };
+
+        India: India {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(I) &kp N &kp D &kp I &kp A>;
+            label = "INDIA";
+        };
+
+        Juliet: Juliet {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(J) &kp U &kp L &kp I &kp E &kp T>;
+            label = "JULIET";
+        };
+
+        Kilo: Kilo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(K) &kp I &kp L &kp O>;
+            label = "KILO";
+        };
+
+        Lima: Lima {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(L) &kp I &kp M &kp A>;
+            label = "LIMA";
         };
     };
 
