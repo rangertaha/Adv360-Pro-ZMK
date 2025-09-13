@@ -130,6 +130,104 @@
             bindings = <&kp LS(L) &kp I &kp M &kp A>;
             label = "LIMA";
         };
+
+        Mike: Mike {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(M) &kp I &kp K &kp E>;
+            label = "MIKE";
+        };
+
+        November: November {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(N) &kp O &kp V &kp E &kp M &kp B &kp E &kp R>;
+            label = "NOVEMBER";
+        };
+
+        Oscar: Oscar {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(O) &kp S &kp C &kp A &kp R>;
+            label = "OSCAR";
+        };
+
+        Papa: Papa {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(P) &kp A &kp P &kp A>;
+            label = "PAPA";
+        };
+
+        Quebec: Quebec {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(Q) &kp U &kp E &kp B &kp E &kp C>;
+            label = "QUEBEC";
+        };
+
+        Romeo: Romeo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(R) &kp O &kp M &kp E &kp O>;
+            label = "ROMEO";
+        };
+
+        Sierra: Sierra {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(S) &kp I &kp E &kp R &kp R &kp A>;
+            label = "SIERRA";
+        };
+
+        Tango: Tango {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(T) &kp A &kp N &kp G &kp O>;
+            label = "TANGO";
+        };
+
+        Uniform: Uniform {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(U) &kp N &kp I &kp F &kp O &kp R &kp M>;
+            label = "UNIFORM";
+        };
+
+        Victor: Victor {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(V) &kp I &kp C &kp T &kp O &kp R>;
+            label = "VICTOR";
+        };
+
+        Whiskey: Whiskey {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(W) &kp H &kp I &kp S &kp K &kp E &kp Y>;
+            label = "WHISKEY";
+        };
+
+        Xray: Xray {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(X) &kp R &kp A &kp Y>;
+            label = "XRAY";
+        };
+
+        Yankee: Yankee {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(Y) &kp A &kp N &kp K &kp E &kp E>;
+            label = "YANKEE";
+        };
+
+        Zulu: Zulu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(Z) &kp U &kp L &kp U>;
+            label = "ZULU";
+        };
     };
 
     keymap {
@@ -207,13 +305,13 @@
             >;
         };
 
-        Nato {
+        RTO {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &Alpha  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&kp EQUAL       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &to 0                                       &to 5   &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0   &kp MINUS
+&kp TAB         &Quebec       &Whiskey      &Echo         &Romeo        &Tango        &trans                                      &trans  &Yankee       &Uniform      &India        &Oscar        &Papa          &kp NON_US_BACKSLASH
+&kp ESCAPE      &Alpha        &Sierra       &Delta        &Foxtrot      &Golf         &trans  &trans  &trans      &trans  &trans  &trans  &Hotel        &Juliet       &Kilo         &Lima         &kp SEMICOLON  &kp SINGLE_QUOTE
+&kp LEFT_SHIFT  &Zulu         &Xray         &Charlie      &Victor       &Golf                         &trans      &trans                  &November     &Mike         &kp COMMA     &kp PERIOD    &kp SLASH      &kp RIGHT_SHIFT
+&none           &none         &none         &none         &none                       &trans  &trans  &trans      &trans  &trans  &trans                &none         &none         &none         &none          &none
             >;
         };
     };
