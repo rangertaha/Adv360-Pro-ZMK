@@ -252,7 +252,7 @@
 &kp PLUS   &kp EXCL      &kp AT        &kp HASH          &kp DOLLAR         &kp PERCENT  &none                                                        &none      &kp CARET     &kp AMPS        &kp ASTERISK     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE
 &kp EQUAL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3      &kp NUMBER_4       &kp N5       &none     &kp LCTRL  &kp LALT      &kp RIGHT_GUI  &kp RCTRL  &none      &kp NUMBER_6  &kp N7          &kp NUMBER_8     &kp N9                &kp N0                 &kp MINUS
 &kp LSHFT  &kp TILDE     &kp CAPS      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none                             &kp HOME      &kp PAGE_UP                          &none         &kp LEFT_BRACE  &kp RIGHT_BRACE  &none                 &kp GRAVE              &kp RSHFT
-&trans     &none         &none         &none             &none                           &kp BSPC  &kp DEL    &kp END       &kp PAGE_DOWN  &kp ENTER  &kp SPACE                &TSD0           &none            &none                 &none                  &trans
+&trans     &none         &none         &none             &none                           &kp BSPC  &kp DEL    &kp END       &kp PAGE_DOWN  &kp ENTER  &kp SPACE                &TSD0           &tsd2            &none                 &none                  &trans
             >;
         };
 
