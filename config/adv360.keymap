@@ -15,15 +15,11 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <130>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
 
             hold-trigger-key-positions = <29 30 31 32 44 43 42 41>;
-            require-prior-idle-ms = <75>;
-            quick-tap-ms = <100>;
-            hold-while-undecided;
-            hold-while-undecided-linger;
         };
 
         ht: ht {
