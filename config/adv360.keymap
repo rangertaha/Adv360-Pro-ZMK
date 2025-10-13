@@ -237,11 +237,11 @@
             label = "op+";
             display-name = "opn";
             bindings = <
-&kp EQUAL       &kp NUMBER_1      &kp NUMBER_2  &kp NUMBER_3    &kp NUMBER_4    &kp NUMBER_5  &to 0                                                           &mo 4        &kp NUMBER_6  &kp N7           &kp N8           &kp N9            &kp N0                     &kp MINUS
-&kp TAB         &kp Q             &kp W         &kp E           &kp R           &kp T         &to 1                                                           &to 3        &kp Y         &kp U            &kp I            &kp O             &kp P                      &kp BSLH
-&kp ESC         &hm LEFT_SHIFT A  &hm LCTRL S   &hm LEFT_ALT D  &hm LEFT_GUI F  &kp G         &to 2            &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &to 4        &kp H         &hm RIGHT_GUI J  &hm RIGHT_ALT K  &hm RCTRL L       &hm RIGHT_SHIFT SEMICOLON  &kp SQT
+&kp EQUAL       &kp NUMBER_1      &kp NUMBER_2  &kp NUMBER_3    &kp NUMBER_4    &kp NUMBER_5  &to 0                                                           &mo 5        &kp NUMBER_6  &kp N7           &kp N8           &kp N9            &kp N0                     &kp MINUS
+&kp TAB         &kp Q             &kp W         &kp E           &kp R           &kp T         &mo 1                                                           &mo 3        &kp Y         &kp U            &kp I            &kp O             &kp P                      &kp BSLH
+&kp ESC         &hm LEFT_SHIFT A  &hm LCTRL S   &hm LEFT_ALT D  &hm LEFT_GUI F  &kp G         &mo 2            &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &mo 4        &kp H         &hm RIGHT_GUI J  &hm RIGHT_ALT K  &hm RCTRL L       &hm RIGHT_SHIFT SEMICOLON  &kp SQT
 &kp LEFT_SHIFT  &kp Z             &kp X         &kp C           &kp V           &kp B                                     &kp HOME      &kp PG_UP                          &kp N         &kp M            &kp COMMA        &kp DOT           &kp FSLH                   &kp RSHFT
-&mo 2           &kp GRAVE         &kp CAPS      &kp LEFT        &kp RIGHT                     &lt 1 BACKSPACE  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &lt 2 SPACE                &kp UP_ARROW     &kp DOWN         &kp LEFT_BRACKET  &kp RIGHT_BRACKET          &to 5
+&mo 2           &kp GRAVE         &kp CAPS      &kp LEFT        &kp RIGHT                     &lt 1 BACKSPACE  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &lt 2 SPACE                &kp UP_ARROW     &kp DOWN         &kp LEFT_BRACKET  &kp RIGHT_BRACKET          &mo 1
             >;
         };
 
@@ -281,24 +281,26 @@
             >;
         };
 
-        mod {
-            display-name = "Mod";
+        layer_4 {
+            label = "original2";
+            display-name = "default-";
             bindings = <
-&bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &to 0                                                    &trans           &none        &rgb_ug RGB_SPI  &rgb_ug RGB_ON  &bl BL_INC  &bl BL_DEC  &bl BL_TOG
-&none           &none         &none         &none         &sys_reset    &none         &trans                                                   &trans           &none        &none            &none           &none       &none       &none
-&studio_unlock  &none         &soft_off     &none         &none         &none         &trans  &none  &out OUT_USB      &bt BT_CLR  &none       &trans           &none        &none            &none           &none       &none       &none
-&none           &none         &none         &none         &none         &bootloader                  &out OUT_BLE      &none                                    &bootloader  &none            &none           &none       &none       &none
-&trans          &none         &none         &none         &none                       &none   &none  &out OUT_TOG      &none       &bl BL_TOG  &rgb_ug RGB_TOG               &bl BL_INC       &bl BL_DEC      &bl BL_TOG  &none       &trans
+&kp EQUAL       &kp N1     &kp N2    &kp N3          &kp N4           &kp N5  &to 0                                                           &mo 4        &kp N6  &kp N7  &kp N8          &kp N9            &kp N0             &kp MINUS
+&kp TAB         &kp Q      &kp W     &kp E           &kp R            &kp T   &trans                                                          &trans       &kp Y   &kp U   &kp I           &kp O             &kp P              &kp BSLH
+&kp ESC         &kp A      &kp S     &kp D           &kp F            &kp G   &trans           &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &trans       &kp H   &kp J   &kp K           &kp L             &kp SEMICOLON      &kp SQT
+&kp LEFT_SHIFT  &kp Z      &kp X     &kp C           &kp V            &kp B                               &kp HOME      &kp PG_UP                          &kp N   &kp M   &kp COMMA       &kp DOT           &kp FSLH           &kp RSHFT
+&mo 2           &kp GRAVE  &kp CAPS  &kp LEFT_ARROW  &kp RIGHT_ARROW          &lt 1 BACKSPACE  &trans     &kp END       &kp PG_DN  &trans     &lt 2 SPACE          &kp UP  &kp DOWN_ARROW  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &mo 1
             >;
         };
 
-        RTO {
+        mod {
+            display-name = "Mod";
             bindings = <
-&kp EQUAL       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &to 0                                       &to 4   &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0   &kp MINUS
-&kp TAB         &Quebec       &Whiskey      &Echo         &Romeo        &Tango        &trans                                      &trans  &Yankee       &Uniform      &India        &Oscar        &Papa          &kp NON_US_BACKSLASH
-&kp ESCAPE      &Alpha        &Sierra       &Delta        &Foxtrot      &Golf         &trans  &trans  &trans      &trans  &trans  &trans  &Hotel        &Juliet       &Kilo         &Lima         &kp SEMICOLON  &kp SINGLE_QUOTE
-&kp LEFT_SHIFT  &Zulu         &Xray         &Charlie      &Victor       &Golf                         &trans      &trans                  &November     &Mike         &kp COMMA     &kp PERIOD    &kp SLASH      &kp RIGHT_SHIFT
-&none           &none         &none         &none         &none                       &trans  &trans  &trans      &trans  &trans  &trans                &none         &none         &none         &none          &none
+&bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &to 0                                               &trans           &none        &rgb_ug RGB_SPI  &rgb_ug RGB_ON  &bl BL_INC  &bl BL_DEC  &bl BL_TOG
+&none           &none         &none         &none         &sys_reset    &none         &to 1                                               &to 3            &none        &none            &none           &none       &none       &none
+&studio_unlock  &none         &soft_off     &none         &none         &none         &to 2  &none  &out OUT_USB      &trans  &none       &to 4            &none        &none            &none           &none       &none       &none
+&none           &none         &none         &none         &none         &bootloader                 &out OUT_BLE      &none                                &bootloader  &none            &none           &none       &none       &none
+&trans          &none         &none         &none         &none                       &none  &none  &out OUT_TOG      &none   &bl BL_TOG  &rgb_ug RGB_TOG               &bl BL_INC       &bl BL_DEC      &bl BL_TOG  &none       &trans
             >;
         };
     };
