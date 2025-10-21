@@ -21,6 +21,7 @@
 
             hold-trigger-key-positions = <29 30 31 32 44 43 42 41>;
             retro-tap;
+            hold-trigger-on-release;
         };
 
         ht: ht {
