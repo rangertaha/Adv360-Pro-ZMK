@@ -46,6 +46,13 @@
             bindings = <&kp LS(M) &kp I &kp K &kp E &kp N1 &kp N2 &kp LS(C) &kp H &kp A &kp R &kp L &kp I &kp E &kp N3 &kp N4>;
             label = "TSD2";
         };
+
+        TSD3: TSD3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(A) &kp L &kp P &kp H &kp A &kp N0 &kp N1 &kp LS(C) &kp H &kp A &kp R &kp L &kp I &kp E &kp N0 &kp N2>;
+            label = "TSD3";
+        };
     };
 
     keymap {
@@ -70,7 +77,7 @@
 &kp PLUS   &kp EXCL      &kp AT        &kp HASH        &kp DOLLAR       &kp PERCENT  &trans                                                  &trans     &kp CARET     &kp AMPS          &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE
 &kp EQUAL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp NUMBER_4     &kp N5       &trans  &trans  &kp LALT      &kp RIGHT_GUI  &trans     &trans     &kp NUMBER_6  &kp N7            &kp NUMBER_8       &kp N9                &kp N0                 &kp MINUS
 &kp CAPS   &none         &none         &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp TILDE                    &kp HOME      &kp PAGE_UP                          &kp GRAVE     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none                 &none                  &kp CAPS
-&trans     &none         &none         &none           &none                         &trans  &trans  &kp END       &kp PAGE_DOWN  &kp ENTER  &kp SPACE                &TSD0             &TSD1              &TSD2                 &none                  &trans
+&trans     &none         &none         &none           &none                         &trans  &trans  &kp END       &kp PAGE_DOWN  &kp ENTER  &kp SPACE                &TSD0             &TSD1              &TSD2                 &TSD3                  &trans
             >;
         };
 
