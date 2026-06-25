@@ -53,6 +53,13 @@
             bindings = <&kp LS(A) &kp L &kp P &kp H &kp A &kp N0 &kp N1 &kp LS(C) &kp H &kp A &kp R &kp L &kp I &kp E &kp N0 &kp N2>;
             label = "TSD3";
         };
+
+        TSD4: TSD4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(G) &kp R &kp E &kp E &kp N &kp N2 &kp N0 &kp N2 &kp N6 &kp LS(D) &kp O &kp G &kp EXCL>;
+            label = "TSD4";
+        };
     };
 
     keymap {
@@ -77,7 +84,7 @@
 &kp PLUS   &kp EXCL      &kp AT        &kp HASH        &kp DOLLAR       &kp PERCENT  &trans                                                  &trans     &kp CARET     &kp AMPS          &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE
 &kp EQUAL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp NUMBER_4     &kp N5       &trans  &trans  &kp LALT      &kp RIGHT_GUI  &trans     &trans     &kp NUMBER_6  &kp N7            &kp NUMBER_8       &kp N9                &kp N0                 &kp MINUS
 &kp CAPS   &none         &none         &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp TILDE                    &kp HOME      &kp PAGE_UP                          &kp GRAVE     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none                 &none                  &kp CAPS
-&trans     &none         &none         &none           &none                         &trans  &trans  &kp END       &kp PAGE_DOWN  &kp ENTER  &kp SPACE                &TSD0             &TSD1              &TSD2                 &TSD3                  &trans
+&trans     &none         &none         &none           &none                         &trans  &trans  &kp END       &kp PAGE_DOWN  &kp ENTER  &kp SPACE                &TSD0             &TSD1              &TSD2                 &TSD3                  &TSD4
             >;
         };
 
@@ -106,15 +113,15 @@
             >;
         };
 
-        layer_4 {
-            label = "original2";
-            display-name = "default-";
+        origin+ {
+            label = "or";
+            display-name = "opn";
             bindings = <
-&kp EQUAL       &kp N1     &kp N2    &kp N3          &kp N4           &kp N5  &to 0                                                           &mo 5        &kp N6  &kp N7  &kp N8          &kp N9            &kp N0             &kp MINUS
-&kp TAB         &kp Q      &kp W     &kp E           &kp R            &kp T   &trans                                                          &trans       &kp Y   &kp U   &kp I           &kp O             &kp P              &kp BSLH
-&kp ESC         &kp A      &kp S     &kp D           &kp F            &kp G   &trans           &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &trans       &kp H   &kp J   &kp K           &kp L             &kp SEMICOLON      &kp SQT
-&kp LEFT_SHIFT  &kp Z      &kp X     &kp C           &kp V            &kp B                               &kp HOME      &kp PG_UP                          &kp N   &kp M   &kp COMMA       &kp DOT           &kp FSLH           &kp RSHFT
-&mo 2           &kp GRAVE  &kp CAPS  &kp LEFT_ARROW  &kp RIGHT_ARROW          &lt 1 BACKSPACE  &trans     &kp END       &kp PG_DN  &trans     &lt 2 SPACE          &kp UP  &kp DOWN_ARROW  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &mo 1
+&kp EQUAL       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp NUMBER_4    &kp NUMBER_5  &to 0                                                           &mo 5        &kp NUMBER_6  &kp N7           &kp N8           &kp N9            &kp N0             &kp MINUS
+&kp TAB         &kp Q         &kp W         &kp E           &kp R           &kp T         &to 1                                                           &to 3        &kp Y         &kp U            &kp I            &kp O             &kp P              &kp BSLH
+&kp ESC         &kp A         &hm LCTRL S   &hm LEFT_ALT D  &hm LEFT_GUI F  &kp G         &to 2            &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &to 4        &kp H         &hm RIGHT_GUI J  &hm RIGHT_ALT K  &hm RCTRL L       &kp SEMICOLON      &kp SQT
+&kp LEFT_SHIFT  &kp Z         &kp X         &kp C           &kp V           &kp B                                     &kp HOME      &kp PG_UP                          &kp N         &kp M            &kp COMMA        &kp DOT           &kp FSLH           &kp RSHFT
+&mo 2           &kp GRAVE     &kp CAPS      &kp LEFT        &kp RIGHT                     &lt 1 BACKSPACE  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &lt 2 SPACE                &kp UP_ARROW     &kp DOWN         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &mo 1
             >;
         };
 
